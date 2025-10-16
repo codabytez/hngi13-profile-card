@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codabytez Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <meta
+      name="description"
+      content="A simple profile card with user details and social links."
+    />
+    <meta name="author" content="Lisan al Gaib" />
+    <meta
+      name="keywords"
+      content="profile, card, user, social links, hobbies, dislikes"
+    />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <div class="card-layout">
+        <header class="card-header">
+          <div class="header-content">
+            <figure class="avatar-container">
+              <img
+                src="https://obinnachidi.vercel.app/assets/iconB-jThqXrCR.svg"
+                alt="Profile picture of Lisan al Gaib"
+                class="avatar"
+                data-testid="test-user-avatar"
+              />
+            </figure>
+            <div class="header-text">
+              <h1 class="user-name" data-testid="test-user-name">
+                Lisan al Gaib
+              </h1>
+              <p class="user-bio" data-testid="test-user-bio">
+                Frontend developer passionate about creating accessible and
+                beautiful web experiences. Music enthusiast and open-source
+                contributor.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div class="card-content">
+          <div class="time-display">
+            <div class="time-label">Current Time (Milliseconds)</div>
+            <div
+              class="time-value"
+              data-testid="test-user-time"
+              id="currentTime"
+            ></div>
+          </div>
+
+          <nav class="social-links">
+            <h2 class="section-title">Connect</h2>
+            <ul class="social-list" data-testid="test-user-social-links">
+              <li>
+                <a
+                  href="https://twitter.com/codabytez"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-twitter"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/codabytez"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-github"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/codabytez"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://codabytez.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  data-testid="test-user-social-website"
+                >
+                  Website
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="interests-section">
+            <section class="interest-group hobbies-section">
+              <h2 class="section-title">Hobbies & Interests</h2>
+              <ul class="interest-list" data-testid="test-user-hobbies">
+                <li class="interest-item">Photography</li>
+                <li class="interest-item">Music</li>
+                <li class="interest-item">Reading Sci-Fi</li>
+                <li class="interest-item">Games</li>
+                <li class="interest-item">Playing Guitar</li>
+              </ul>
+            </section>
+
+            <section class="interest-group dislikes-section">
+              <h2 class="section-title">Dislikes</h2>
+              <ul class="interest-list" data-testid="test-user-dislikes">
+                <li class="interest-item">Bad Documentation</li>
+                <li class="interest-item">Traffic Jams</li>
+                <li class="interest-item">Cold Coffee</li>
+                <li class="interest-item">Slow Internet</li>
+                <li class="interest-item">Loud Noises</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+
+  <script src="script.js"></script>
+</html>

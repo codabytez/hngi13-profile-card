@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://obinnachidi.vercel.app/assets/iconB-jThqXrCR.svg"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Profile</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header class="header">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to work together? Let's connect.</p>
+      </header>
+
+      <div class="content">
+        <div
+          class="success-message"
+          data-testid="test-contact-success"
+          id="successMessage"
+        >
+          ✓ Thank you! Your message has been sent successfully.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              data-testid="test-contact-name"
+              aria-describedby="nameError"
+              required
+            />
+            <div
+              class="error-message"
+              id="nameError"
+              data-testid="test-contact-error-name"
+              role="alert"
+            >
+              Please enter your full name
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              data-testid="test-contact-email"
+              aria-describedby="emailError"
+              required
+            />
+            <div
+              class="error-message"
+              id="emailError"
+              data-testid="test-contact-error-email"
+              role="alert"
+            >
+              Please enter a valid email address
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              data-testid="test-contact-subject"
+              aria-describedby="subjectError"
+              required
+            />
+            <div
+              class="error-message"
+              id="subjectError"
+              data-testid="test-contact-error-subject"
+              role="alert"
+            >
+              Please enter a subject
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              data-testid="test-contact-message"
+              aria-describedby="messageError"
+              required
+            ></textarea>
+            <div
+              class="error-message"
+              id="messageError"
+              data-testid="test-contact-error-message"
+              role="alert"
+            >
+              Message must be at least 10 characters
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-btn"
+            data-testid="test-contact-submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

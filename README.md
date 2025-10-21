@@ -9,7 +9,7 @@ A multi-page, semantic, accessible, and responsive web application built with va
 ## Project Structure
 
 ```javascript
-profile-card-stage1/
+hngi13-profile-card/
 ├── index.html          # Profile card page (Stage 0)
 ├── contact.html        # Contact form page (Stage 1)
 ├── about.html          # About me page (Stage 1)
